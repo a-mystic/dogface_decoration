@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/activity_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        opencv:camera_id="any" />
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="10dp"
+                android:layout_height="500dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="254dp"
+                android:layout_marginBottom="-1dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/button_states"
+                android:text=""
+                
+                />
+
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/sunglasses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:clickable="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            opencv:backgroundTint="#FFFFFF"
+            opencv:srcCompat="@drawable/sunglasses" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/horn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:layout_alignParentBottom="true"
+                android:clickable="true"
+                android:layout_alignParentEnd="true"
+                opencv:backgroundTint="#FFFFFF"
+                opencv:srcCompat="@drawable/horn" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/sunglass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="#FFFFFF"
+                android:clickable="true"
+                android:layout_alignParentEnd="true"
+                opencv:backgroundTint="#FFFFFF"
+                opencv:srcCompat="@drawable/sunglass" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="#FFFFFF"
+                android:clickable="true"
+                android:layout_alignParentEnd="true"
+                opencv:backgroundTint="#FFFFFF"
+                opencv:srcCompat="@drawable/add" />
+
+
+        </RelativeLayout>
+
+
+</FrameLayout>
