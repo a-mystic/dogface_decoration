@@ -211,7 +211,7 @@ Java_com_example_opencvpractice_MainActivity_detect(JNIEnv *env, jobject instanc
                        circle(img_result, overlaycenter, radius,
                        Scalar(255, 0, 0));    //얼굴에서 이미지를 표시할 부분
         Mat resized_glasses;
-        float imgScale =real_facesize_width/(800.0+imagesize) ;
+        float imgScale =real_facesize_width/(800.0+imagesize) ;   //이미지 크기를 조절하는 부분으로 추후 수정예정 이미지마다 자바에서 크기를 다르게 전달받아야 할듯
         int w,h;
         w=glasses.cols *imgScale;
         h=glasses.rows*imgScale;
